@@ -35,7 +35,7 @@ background-color: #525252;
 /*------------------------------Special padding/ margins/text*/
 
 h1,h2,h3,h4{
-    margin: o;
+    margin: 0;
 }
 .uppercase {
     text-transform: uppercase;
@@ -127,7 +127,7 @@ header {
 .menu-item{
         height: 120px;
         text-align: center;
-        padding: o;
+        padding: 0;
 }
 
 .menu-item a{
