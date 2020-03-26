@@ -8,11 +8,13 @@
     <script src="https://kit.fontawesome.com/60ca92335a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  <title>Ashur</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/github-information.js"></script>
+    <title>Ashur</title>
 </head>
 <body>
     <header>
-        <div class="row no-gutters">
+        <div class="row no-gutters" style="overflow:hidden;">
             <a href="index.html" class="col-md-4 logo">
             </a>
 
@@ -68,7 +70,23 @@
             </div>
         </div>
     </header>
-  
+     <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                <h5 class="uppercase text-center">You can also search on other user profiles</h5>
+
+                <div class="center-form">
+                    <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()" />
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
       <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-4">

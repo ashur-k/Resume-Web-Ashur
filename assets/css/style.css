@@ -96,6 +96,10 @@ header {
 
 }
 
+.over-flow-hidden{
+    overflow: hidden;
+}
+
 .logo{
     background: url("../images/logo.jpg");
     background-position: center;
@@ -105,6 +109,7 @@ header {
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+    overflow: hidden;
      animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
