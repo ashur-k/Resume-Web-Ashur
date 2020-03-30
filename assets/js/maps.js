@@ -1,6 +1,6 @@
   function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3,
+                zoom: 2,
                 center: {
                     lat: 46.619261,
                     lng: -33.134766
@@ -15,7 +15,7 @@
                 lng: -73.968285
             }, 
             {
-                lat: 41.084045,
+                lat: 40.084045,
                 lng: -73.874256
             }, 
             {
@@ -26,7 +26,8 @@
             var markers = locations.map(function(location, i) {
                 return new google.maps.Marker({
                     position: location,
-                    label: labels[i % labels.length]
+                    label: labels[i % labels.length],
+                    icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
                 });
             });
 
