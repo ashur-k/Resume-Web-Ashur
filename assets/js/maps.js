@@ -1,24 +1,11 @@
-      let MAPKEY ="AIzaSyDlaQZBO-WosqpnUVqkWyicmiW6rKSP1as";
-        let map;
-            document.addEventListener("DOMContentLoaded", ()=>{
-            
-            let s = document.createElement("script");
-            document.head.appendChild(s);
-            
-            s.addEventListener("load", () => {
-                //script has loaded
-                console.log("script has loaded");
-                map = new google.maps.Map(document.getElementById("map"), 
-                {                      
-                    ZOOM: 3,
-                    zoom: 2,
-                    center: {lat: 46.619261, lng: -33.134766},
-                    
-                    
-                });
+ function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
             });
-            s.src = `https://maps.googleapis.com/maps/api/js?key=${MAPKEY}`;
-        });
 
             var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
@@ -28,7 +15,7 @@
                 lng: -73.968285
             }, 
             {
-                lat: 40.084045,
+                lat: 41.084045,
                 lng: -73.874256
             }, 
             {
@@ -39,13 +26,11 @@
             var markers = locations.map(function(location, i) {
                 return new google.maps.Marker({
                     position: location,
-                    label: labels[i % labels.length],
-                    icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                    label: labels[i % labels.length]
                 });
             });
 
             var markerCluster = new MarkerClusterer(map, markers, {
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
-        
-
+        }
