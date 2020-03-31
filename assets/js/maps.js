@@ -9,10 +9,12 @@
                 //script has loaded
                 console.log("script has loaded");
                 map = new google.maps.Map(document.getElementById("map"), 
-                {  
-                    center: {lat: 45.349711, lng: -75.7569551},
-                    zoom: 16,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                {                      
+                    ZOOM: 3,
+                    zoom: 2,
+                    center: {lat: 46.619261, lng: -33.134766},
+                    
+                    
                 });
             });
             s.src = `https://maps.googleapis.com/maps/api/js?key=${MAPKEY}`;
