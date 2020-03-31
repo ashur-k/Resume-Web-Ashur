@@ -1,12 +1,22 @@
-  function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                ZOOM: 3,
-                zoom: 2,
-                center: {
-                    lat: 46.619261,
-                    lng: -33.134766
-                }
+      let MAPKEY ="AIzaSyDlaQZBO-WosqpnUVqkWyicmiW6rKSP1as";
+        let map;
+            document.addEventListener("DOMContentLoaded", ()=>{
+            
+            let s = document.createElement("script");
+            document.head.appendChild(s);
+            
+            s.addEventListener("load", () => {
+                //script has loaded
+                console.log("script has loaded");
+                map = new google.maps.Map(document.getElementById("map"), 
+                {  
+                    center: {lat: 45.349711, lng: -75.7569551},
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
             });
+            s.src = `https://maps.googleapis.com/maps/api/js?key=${MAPKEY}`;
+        });
 
             var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
