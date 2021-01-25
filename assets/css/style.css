@@ -248,7 +248,7 @@ background: #e84610;
 
 .three-reasons-icon {
     font-size: 26px;
-    color: #e67e22;
+    color: #6577e2;
 
     }
 
@@ -394,8 +394,10 @@ button[type="submit"] {
 }
 
 
-
-
+.background-color-theme{
+    background-color: #122d49!important;
+    color: #fff;
+}
 
 
 
