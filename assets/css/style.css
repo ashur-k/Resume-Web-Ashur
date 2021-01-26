@@ -398,6 +398,9 @@ button[type="submit"] {
     background-color: #122d49!important;
     color: #fff;
 }
+.carousel-indicators li{
+    background-color: #ca2929 !important;
+}
 
 
 
