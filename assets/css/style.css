@@ -112,7 +112,7 @@ header {
     background-size: cover;
     min-height: 360px;
     overflow: hidden;
-    height: 441px !important;
+    height: auto !important;
 }
 @keyframes hero-zoom {
     from{
