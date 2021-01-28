@@ -7,11 +7,13 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            alert("Message sent");
+            var element = document.getElementById("sendEmailSuccess");
+            element.classList.add("d-block");
         },
         function(error) {
             console.log("FAILED", error);
-            alert("Message failed press ok to see error");
+            var element = document.getElementById("sendEmailFail");
+            element.classList.add("d-block");
         }
     );
     return false;  // To block from loading a new page
