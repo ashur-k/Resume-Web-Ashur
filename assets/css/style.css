@@ -63,7 +63,16 @@ background-color: #9b59b6;
 
 
 .ul-menu-li-border{
-    border: #000 1px solid;
+    border: #f0f4c3 1px solid;
+}
+.project-button:hover{
+    background-color: #d32f2f;
+}
+#projectsCarousel > a.carousel-control-next > i:hover{
+    color: #d32f2f !important;
+}
+#projectsCarousel > a.carousel-control-prev > i:hover{
+    color: #d32f2f !important;
 }
 
 body {
@@ -255,7 +264,7 @@ footer {
 }
 
 .social-links li a i:hover{
-background: #e84610;
+background: #d32f2f;
 }
 #footer-details{
     padding: 20px;
