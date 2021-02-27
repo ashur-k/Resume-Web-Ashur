@@ -2,7 +2,7 @@
 
 /*---------------------------------------------------------------colors*/
 .text-black{
-    color: #000000;
+    color: #000000 !important;
 }
 .bg-color-name-title {
     background-color: #122d49;
@@ -22,34 +22,48 @@
     background-color: #ffffff;
 }
 .bg-color-conferences {
-    background-color: #f4f4f4;
+    background-color: #122d49;
 }
 
 .bg-color-groups {
     background-color: #ffffff;
 }
 
+/* Skills level*/
 .ui-menu-color-home{
-background-color: #e67e22;
+    background: linear-gradient(to left, #212121, #8bc34a);
 }
+
+/* Projects */
+.ui-menu-color-projects{
+    background: linear-gradient(to right, #424242, #0d547e);
+}
+/* work experience */
+.ui-menu-color-download{
+    background: linear-gradient(to left, #212121,  #ad1457 );
+}
+/* education */
+.ui-menu-color-interests {
+       background: linear-gradient(to right, #424242, #195218);
+}
+
+/* github */
+.ui-menu-color-github {
+        background: linear-gradient(to left, #212121, #ef6c00);
+}
+/* contact */
+.ui-menu-color-contact{
+    background: linear-gradient(to right, #424242, rgb(108, 164, 228));
+}
+
 .ui-menu-color-resume{
 background-color: #9b59b6;
 }
-.ui-menu-color-projects{
-background-color: #077b8a;
-}
-.ui-menu-color-contact{
-background-color: #3498db;
-}
-.ui-menu-color-download{
-background-color: #d9a81d;
-}
-.ui-menu-color-github {
-    background-color: #1c4a6c;
-}
 
-.ui-menu-color-interests {
-    background-color: #e74c3c;
+
+
+.ul-menu-li-border{
+    border: #000 1px solid;
 }
 
 body {
@@ -370,15 +384,18 @@ background: #e84610;
 .center-form{
     padding-top: 10px;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
     color: #fafafa;
-    background-color: #e84610;
+    background-color: #122d49;
 
+}
+button[type="submit"]:hover{
+    background-color: #396895;
 }
 /*----------------------------------------------------------------------------Media Queries*/
 
@@ -387,7 +404,7 @@ button[type="submit"] {
     padding-top: 30px;
     min-height: 240px;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 100%;
 }
 }
 

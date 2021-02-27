@@ -84,13 +84,16 @@
             </div>
         </div>
     </header>
-     <section class="container-fluid">
+     <section class="container">
         <div class="row bg-color-contact">
-            <div class="col">
-                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
-                <h5 class="uppercase text-center">You can also search on other user profiles</h5><hr>
-                <div class="center-form">
-                    <input type="text" id="gh-username" value="ashur-k" oninput="fetchGitHubInformation()" />
+            <div class="col-sm-12">
+                <h3 class="contact-heading uppercase text-center">My GitHub Projects</h3>
+                <div class="col-sm-12 center-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"
+                                type="text" id="gh-username" value="ashur-k" oninput="fetchGitHubInformation()" />
+                    </div>
+                    <small>You can also search on other user profiles</small>
                     <div id="gh-user-data"></div>
                     <div id="gh-repo-data"></div>
                 </div>
